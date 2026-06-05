@@ -44,6 +44,29 @@ p{
     padding: 0 15px;
 }
 
+
+@keyframes salto {
+  0%   { transform: translateY(0); }
+  40%  { transform: translateY(-100px); }
+  60%  { transform: translateY(0); }
+  80%  { transform: translateY(-30px); } /* rebote */
+  100% { transform: translateY(0); }
+}
+
+.saltar {
+  animation: salto 0.5s ease;
+}
+
+
+#contador {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #151414;
+  font-weight: bold;
+}
+
+
+
 .boton-iniciar 
 {
      width: 150px;
@@ -54,3 +77,7 @@ p{
     cursor: pointer;
     border: none; 
 }
+
+
+
+
